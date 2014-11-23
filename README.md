@@ -7,3 +7,5 @@ InterviewQuestionsPractice
 * [Longest palindrome in string](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/LongestPalindromeInString.java)
   * O(n^2) time complexity, O(1) space complexity
 * [Base conversion, to and from decimal / any other base](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/ConvertToBaseN.java)
+* [MinStack](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinStack.java)
+  * Supports O(1) pop, push, and getMin
