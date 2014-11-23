@@ -6,3 +6,4 @@ InterviewQuestionsPractice
 * [Fibonacci sequence, recursively with memoization and iteratively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/Fibonacci.java)
 * [Longest palindrome in string](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/LongestPalindromeInString.java)
   * O(n^2) time complexity, O(1) space complexity
+* [Base conversion, to and from decimal / any other base](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/ConvertToBaseN.java)
