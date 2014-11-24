@@ -9,3 +9,5 @@ InterviewQuestionsPractice
 * [Base conversion, to and from decimal / any other base](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/ConvertToBaseN.java)
 * [MinStack](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinStack.java)
   * Supports O(1) pop, push, and getMin
+* [Maintain median given consecutive numbers from standard input](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MaintainMedian.java)
+  * Computes median in O(log(n))
