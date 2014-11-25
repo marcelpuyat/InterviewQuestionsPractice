@@ -28,7 +28,7 @@ public class OrderStatsTree <T1 extends Comparable<T1>, T2> {
 	 * @param <T1>
 	 * @param <T2>
 	 */
-	private static class OSTNode<T1 extends Comparable<T1>, T2> {
+	protected static class OSTNode<T1 extends Comparable<T1>, T2> {
 		// Contains # of nodes in subtree beneath this node, as well as itself
 		public int sizeOfSubtree;
 		
@@ -51,7 +51,7 @@ public class OrderStatsTree <T1 extends Comparable<T1>, T2> {
 		}
 	}
 	
-	private OSTNode<T1, T2> root;
+	protected OSTNode<T1, T2> root;
 	
 	/**
 	 * Returns true on successful insertion, false when this key had already been entered and did an update.
@@ -236,7 +236,7 @@ public class OrderStatsTree <T1 extends Comparable<T1>, T2> {
 	 * @param key
 	 * @return
 	 */
-	private OSTNode<T1, T2> search(OSTNode<T1, T2> currNode, T1 key) {
+	protected OSTNode<T1, T2> search(OSTNode<T1, T2> currNode, T1 key) {
 		while (currNode != null && currNode.key.compareTo(key) != 0) {
 			if (currNode.key.compareTo(key) < 0) {
 				/* Because of Binary-search-tree property, any node with a key greater than the current node must be
