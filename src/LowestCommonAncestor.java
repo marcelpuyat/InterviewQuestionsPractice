@@ -67,7 +67,7 @@ public class LowestCommonAncestor<T1 extends Comparable<T1>, T2> extends OrderSt
 		 *      /     \
 		 *     0       2
 		 *    (B)     (C) 
-		 *   /			 \
+		 *   /           \
 		 *  /             \
 		 * -1              3
 		 * (E)             (D)  */
