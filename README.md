@@ -1,4 +1,4 @@
-InterviewQuestionsPractice
+Technical Interview Practice
 ==========================
 
 Problems
