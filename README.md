@@ -1,8 +1,8 @@
 InterviewQuestionsPractice
 ==========================
 
-## Problems
-==========================
+Problems
+-------------------
 * All permutations of string, [recursively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/AllPermutationsRecursive.java) and [iteratively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/AllPermutationsIterative.java)
 * [All subsets of string, recursively and iteratively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/AllSubsetsOfString.java)
 * [Fibonacci sequence, recursively with memoization and iteratively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/Fibonacci.java)
@@ -12,8 +12,8 @@ InterviewQuestionsPractice
 * [Maintain median given consecutive numbers from standard input](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MaintainMedian.java)
   * Computes median in O(log(n)
  
-## Data-structure Implementations
-==========================
+Data Structure Implementations
+-------------------
 * [MinStack](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinStack.java)
   * Supports O(1) pop, push, and getMin
 * [Implementation of order statistics tree](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/OrderStatsTree.java)
