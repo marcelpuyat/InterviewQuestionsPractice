@@ -11,6 +11,6 @@ InterviewQuestionsPractice
   * Supports O(1) pop, push, and getMin
 * [Maintain median given consecutive numbers from standard input](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MaintainMedian.java)
   * Computes median in O(log(n))
-* [Implementation of order statistics tree](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MaintainMedian.java)
+* [Implementation of order statistics tree](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/OrderStatsTree.java)
   * search, insert, delete, rank, select, min, max, predecessor, successor in O(height) time.
   * get in-order list in O(n) time.
