@@ -8,6 +8,8 @@ Problems
 * [Base conversion, to and from decimal / any other base](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/ConvertToBaseN.java)
 * [Maintain median given consecutive numbers from standard input](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MaintainMedian.java)
   * Computes median in O(log(n)
+* [Lowest Common Ancestor in BST](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/LeastCommonAncestor.java)
+  * O(log(n))
  
 Data Structure Implementations
 -------------------
