@@ -1,6 +1,3 @@
-Technical Interview Practice
-==========================
-
 Problems
 -------------------
 * All permutations of string, [recursively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/AllPermutationsRecursive.java) and [iteratively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/AllPermutationsIterative.java)
