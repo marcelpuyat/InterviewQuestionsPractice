@@ -10,6 +10,8 @@ Problems
   * Computes median in O(log(n))
 * [Lowest Common Ancestor in BST](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/LowestCommonAncestor.java)
   * O(log(n))
+* [KnapsackProblem (integer weights and values)](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/KnapsackProblem.java)
+  * Dynamic programming, O(Wn) running time
  
 Data Structure Implementations
 -------------------
