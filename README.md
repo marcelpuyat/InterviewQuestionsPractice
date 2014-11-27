@@ -14,6 +14,8 @@ Problems
   * O(log(n))
 * [Knapsack problem (integer weights and values)](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/KnapsackProblem.java)
   * Dynamic programming, O(Wn) running time
+* [Maximum subarray within array](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MaxContiguousSum.java)
+  * O(n) running time
  
 Data Structure Implementations
 -------------------
