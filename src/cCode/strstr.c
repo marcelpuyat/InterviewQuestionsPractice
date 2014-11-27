@@ -13,7 +13,7 @@ char *myStrstr(char *str, char *target) {
 
     /* Note that we only need to iterate over the longer word while the target fits in the
      * remaining space of str. This = n - m + 1 iterations, where n is length of str,
-     * and m is the target word length. We will use longWordPtr to keep track of this. */
+     * and m is the target word length. We will use spaceCounter to keep track of this. */
 
     char *currCharInStr = str;
     char *targetPtr = target;
