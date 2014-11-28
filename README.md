@@ -16,6 +16,8 @@ Problems
   * Dynamic programming, O(Wn) running time
 * [Maximum subarray within array](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MaxContiguousSum.java)
   * O(n) running time
+* [Matrix rotation and mirror operations, in-place](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MatrixRotationAndMirror.java)
+  * O(n^2) running time
  
 Data Structure Implementations
 -------------------
