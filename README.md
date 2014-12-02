@@ -1,3 +1,14 @@
+Data Structure Implementations
+-------------------
+* [Order Statistics Tree](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/OrderStatsTree.java)
+  * search, insert, delete, rank, select, min, max, predecessor, successor in O(height) time.
+  * get in-order list in O(n) time.
+* [MinStack](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinStack.java)
+  * Supports O(1) pop, push, peek, isEmpty, and getMin
+* [MinQueue](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinQueue.java)
+  * Supports enqueue, isEmpty, and getMin in O(1) time, and peek, dequeue in O(1) amortized time
+  * Leverages MinStack implementation
+
 Problems
 -------------------
 * All permutations of string, [recursively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/AllPermutationsRecursive.java) and [iteratively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/AllPermutationsIterative.java)
@@ -21,11 +32,3 @@ Problems
 * [Find sum of any sub-matrix given a matrix](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/RectangleSum.java)
   * O(1) time, O(n^2) space
 * [Print list of parent-child pairs in tree form, in level order](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/ConvertListOfParentChildPairsToTree.java)
- 
-Data Structure Implementations
--------------------
-* [MinStack](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinStack.java)
-  * Supports O(1) pop, push, and getMin
-* [Order Statistics Tree](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/OrderStatsTree.java)
-  * search, insert, delete, rank, select, min, max, predecessor, successor in O(height) time.
-  * get in-order list in O(n) time.
