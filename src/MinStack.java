@@ -39,7 +39,17 @@ public class MinStack<T extends Comparable<T>> {
 	}
 	
 	public T getMin() {
+		if (stackForMins.empty()) return null;
 		return stackForMins.peek();
+	}
+	
+	public T peek() {
+		if (stack.empty()) return null;
+		return stack.peek();
+	}
+	
+	public boolean isEmpty() {
+		return stack.empty();
 	}
 	
 	/* Example using Characters */
