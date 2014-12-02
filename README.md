@@ -4,9 +4,9 @@ Data Structure Implementations
   * search, insert, delete, rank, select, min, max, predecessor, successor in O(height) time.
   * get in-order list in O(n) time.
 * [MinStack](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinStack.java)
-  * Supports O(1) pop, push, peek, isEmpty, and getMin
+  * pop, push, peek, isEmpty, getMin in O(1) time
 * [MinQueue](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinQueue.java)
-  * Supports enqueue, isEmpty, and getMin in O(1) time, and peek, dequeue in O(1) amortized time
+  * Enqueue, isEmpty, getMin in O(1) time; peek, dequeue in O(1) amortized time
   * Leverages MinStack implementation
 
 Problems
