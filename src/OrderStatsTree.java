@@ -1,5 +1,8 @@
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 import helpers.Pair;
 
 /**
@@ -50,6 +53,24 @@ public class OrderStatsTree <T1 extends Comparable<T1>, T2> {
 		public Pair<T1, T2> toKeyValuePair() {
 			return new Pair<T1, T2>(this.key, this.value);
 		}
+		
+		@Override
+		public String toString() {
+			String toReturn = "";
+			toReturn += this.key;
+			if (this.leftChild != null && this.rightChild == null) {
+				toReturn += new String(": {L " + this.leftChild.key + "}");
+			} else if (this.leftChild == null && this.rightChild != null) {
+				toReturn += new String(": {R " + this.rightChild.key + "}");
+			} else if (this.leftChild != null && this.rightChild != null) {
+				toReturn += new String(": {L " + this.leftChild.key + ", R " + this.rightChild.key + "}");
+			} else {
+				toReturn += new String(":{}");
+			}
+			
+			toReturn += " Size: " + sizeOfSubtree;
+			return toReturn;
+		}
 	}
 	
 	protected OSTNode<T1, T2> root;
@@ -63,6 +84,10 @@ public class OrderStatsTree <T1 extends Comparable<T1>, T2> {
 	 * @return
 	 */
 	public boolean insert(T1 key, T2 value) {
+		return insertAndReturnNode(key, value).first;
+	}
+	
+	protected Pair<Boolean, OSTNode<T1, T2>> insertAndReturnNode(T1 key, T2 value) {
 		OSTNode<T1, T2> newNode = new OSTNode<T1, T2>(key, value);
 		
 		OSTNode<T1, T2> newParent = null;
@@ -78,7 +103,7 @@ public class OrderStatsTree <T1 extends Comparable<T1>, T2> {
 			if (spotForNewNode.key.compareTo(key) == 0) {
 				// Case where node with this key already existed.
 				spotForNewNode.value = value;
-				return false;
+				return new Pair<Boolean, OSTNode<T1, T2>>(false, null);
 			}
 			
 			if (spotForNewNode.key.compareTo(key) < 0) {
@@ -100,7 +125,7 @@ public class OrderStatsTree <T1 extends Comparable<T1>, T2> {
 				newParent.leftChild = newNode;
 			}
 		}
-		return true;
+		return new Pair<Boolean, OSTNode<T1, T2>>(false, newNode);
 	}
 	
 	/**
@@ -465,6 +490,38 @@ public class OrderStatsTree <T1 extends Comparable<T1>, T2> {
 		// Add those in right subtree if exists
 		if (currNode.rightChild != null) {
 			populateSortedList(currNode.rightChild, listToPopulate);
+		}
+	}
+	
+	/**
+	 * Prints parent-child relationships level by level using breadth first search.
+	 */
+	public void printTree() {
+		
+		// Stores pairs of {currLevelInTree, currNode}
+		Queue<Pair<Integer, OSTNode<T1, T2>>> bfsQueue = new LinkedList<Pair<Integer, OSTNode<T1, T2>>>();
+		bfsQueue.add(new Pair<Integer, OSTNode<T1,T2>>(0, this.root));
+		int currLevel = -1;
+		System.out.print("Tree printout");
+		while (!bfsQueue.isEmpty()) {
+			Pair<Integer, OSTNode<T1,T2>> levelAndNode = bfsQueue.poll();
+			int thisNodesLevel = levelAndNode.first;
+			if (thisNodesLevel > currLevel) { 
+				System.out.print("\n");
+				System.out.print("Level " + thisNodesLevel + ":\t");
+				currLevel = thisNodesLevel;
+			} else if (thisNodesLevel != 0) {
+				System.out.print(" | ");
+			}
+			
+			OSTNode<T1,T2> currNode = levelAndNode.second;
+			System.out.print(currNode);
+			if (currNode.leftChild != null) {
+				bfsQueue.add(new Pair<Integer, OSTNode<T1,T2>>(thisNodesLevel + 1, currNode.leftChild));
+			}
+			if (currNode.rightChild != null) {
+				bfsQueue.add(new Pair<Integer, OSTNode<T1,T2>>(thisNodesLevel + 1, currNode.rightChild));
+			}
 		}
 	}
 }
