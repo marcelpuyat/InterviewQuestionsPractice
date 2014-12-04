@@ -1,14 +1,3 @@
-Data Structure Implementations
--------------------
-* [Order Statistics Tree](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/OrderStatsTree.java)
-  * search, insert, delete, rank, select, min, max, predecessor, successor in O(height) time.
-  * get in-order list in O(n) time.
-* [MinStack](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinStack.java)
-  * pop, push, peek, isEmpty, getMin in O(1) time
-* [MinQueue](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/MinQueue.java)
-  * Enqueue, isEmpty, getMin in O(1) time; peek, dequeue in O(1) amortized time
-  * Leverages MinStack implementation
-
 Problems
 -------------------
 * All permutations of string, [recursively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/AllPermutationsRecursive.java) and [iteratively](https://github.com/marcelpuyat/InterviewQuestionsPractice/blob/master/src/AllPermutationsIterative.java)
